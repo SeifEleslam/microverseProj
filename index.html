@@ -8,68 +8,71 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <main>
+    <main id="main">
       <h1 id="title">Title</h1>
       <p id="description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
         tempora soluta sapiente! Eum ullam, quo reprehenderit esse non harum
         officiis.
       </p>
-      <form id="form">
-        <div>
+      <form id="survey-form">
+        <div class="form-section">
           <label id="name-label">Name</label>
           <input type="text" id="name" placeholder="Enter name" required />
         </div>
-        <div>
+        <div class="form-section">
           <label id="email-label">Email</label>
-          
-        <!--   <input
-           pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
+          <input
             type="email"
             id="email"
-            title="please provide vaild email"
             placeholder="Enter an email"
             required
           />
-          -->
         </div>
-        <div>
+        <div class="form-section">
           <label id="number-label">Number</label>
-          <input type="number" id="number" min="0" max="10" placeholder="type number" required />
+          <input
+            type="number"
+            id="number"
+            min="0"
+            max="10"
+            placeholder="type number"
+            required
+          />
         </div>
-        <div>
-        <select  id="dropdown">
-          <option value="Red">Red</option>
-          <option value="White">White</option>
-          <option value="Green">Green</option>
-          <option value="Yellow">Yellow</option>
-        </select>
-        </div>
-
-        <div>
-          <input type="radio" id="" name="sport" value="running">
-            <label for="running">Running</label><br>
-            <input type="radio" id="" name="sport" value="Soccer">
-            <label for="Soccer">Soccer</label><br>
-            <input type="radio" id="" name="sport" value="basketball">
-            <label for="basketball">BasketBall</label>
-        </div>
-
-        <div>
-          <input type="checkbox" id="" name="" value="pizza">
-            <label for="vehicle1"> Pizza</label><br>
-            <input type="checkbox" id="" name="" value="burger">
-            <label for="vehicle2"> Burger</label><br>
-            <input type="checkbox" id="" name="vehcle3" value="fries">
-            <label for="vehicle3"> Fries</label><br>
+        <div class="form-section">
+          <label>Color</label>
+          <select id="dropdown">
+            <option value="Red">Red</option>
+            <option value="White">White</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+          </select>
         </div>
 
         <div>
+          <p>Favorite Sport</p>
+          <input type="radio" name="sport" value="running" />
+          <label for="running">Running</label><br />
+          <input type="radio" name="sport" value="Soccer" />
+          <label for="Soccer">Soccer</label><br />
+          <input type="radio" name="sport" value="basketball" />
+          <label for="basketball">BasketBall</label>
+        </div>
+
+        <div>
+          <p>Food you like</p>
+          <input type="checkbox" name="" value="pizza" />
+          <label for="vehicle1"> Pizza</label><br />
+          <input type="checkbox" name="" value="burger" />
+          <label for="vehicle2"> Burger</label><br />
+          <input type="checkbox" name="vehcle3" value="fries" />
+          <label for="vehicle3"> Fries</label><br />
+        </div>
+
+        <div class="form-section">
           <label for="w3review">Add more Suggestion:</label>
-
-            <textarea id="suggestion" name="" rows="3" cols="50">
-           
-            </textarea>
+          <textarea id="suggestion" name="" rows="3" cols="50"> </textarea>
         </div>
 
         <button id="submit" type="submit">submit</button>
